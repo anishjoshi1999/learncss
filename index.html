@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aligment</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+* {
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 900px;
+    border: 3px solid purple;
+    margin: auto;
+    background-color: aqua;
+}
+#item {
+    border: 2px solid green;
+    margin: 12px 3px;
+    padding: 12px 3px; 
+    background: red;
+}
+.fruit {
+    width: 49%;
+    float: left;
+}
+.computer{
+    width: 49%;
+    float: left;
+}
+.stationary {
+    clear: both;
+}
+h1 {
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my Website</h1>
+        <div class="fruit" id="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, expedita.</p>
+        </div>
+        <div class="computer" id="item">
+            <h3>Computers</h3>
+            <p id="coputerpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, reiciendis!</p>
+
+        </div>
+        <div class="stationary" id="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, maiores.</p>
+        </div>
+    </div>
+</body>
+</html>
