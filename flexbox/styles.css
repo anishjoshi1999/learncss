@@ -1,0 +1,68 @@
+.flexbox-container {
+    background-color: yellow;
+    height:700px;
+    display: flex;
+    /* flex-wrap helps to wrap our element inside flexbox container */
+    /* flex-wrap: wrap;
+    flex-direction: row; */
+    /* justify-content default value is flex-sttart */
+    /* justify-content: space-evenly; */
+    /* align-item default value is stretch */
+    /* align-items: stretch; */
+    /* align-content used only for mulitiple flexbox container */
+    /* Used in combination with flex-wrap property works just like justify-content */
+    /* align-content: space-around; */
+
+    /* For column layout */
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* Different properties we can apply to our flexbox items individually*/
+/* flexbox item property is used to override the properties of flexbox-container properties */
+.flexbox-item {
+    width: 200px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+   
+
+}
+.flexbox-item-1 {
+    min-height: 100px;
+     /* every flexbox item will shrink but not flexbox-item-1*/
+     flex-shrink: 0;
+     align-self: flex-start;
+     order: 3;
+}
+.flexbox-item-2 {
+    min-height: 200px;
+    /* Having the same value of flex-grow on two or more items will occupy equal space */
+    flex-grow: 1;
+    /* flex-grow: 2; */
+    flex-basis: 0;
+    align-self: center;
+    order: 1;
+
+
+}
+.flexbox-item-3 {
+    min-height: 300px;
+    /* if you want to take extra space then use flex-grow */
+    flex-grow: 1;
+    flex-basis: 0;
+    align-self: flex-end;
+    order: 2;
+}
+/* Different values of flex-grow on different flexbox items */
+/* for example flexbox-item2 has flex-grow:2 and flexbox-item3 has flex-grow:1 */
+/* This means that out of the available space flexbox-item2 will get twice the space to flexbox-item3 */
+/* The reason flexbox-item 2 is not the twice the size of flexbox-item3 because we have set width property on flexbox-items */
+/* To override these property use flex-basics property*/
+
+/* flex-basis:0 means that element has 0 width */
+/* if you want to override the cross-axis property individually then use align-self*/
+
+/* order property in flexbox-item (not recommened for screen reader users)*/
+/* Note: In flexbox => flex,justify-content,align-items,flex-grow,flex-shrink is all you need to create a dynamic webpage */
