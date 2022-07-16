@@ -57,7 +57,7 @@ header ul li {
     align-items: center;
     text-align: center;
     position: relative;
-    top: 50px;
+    top: 80px;
 }
 .main h1 span {
     color: #f2aa4cff;
@@ -72,11 +72,14 @@ header ul li {
     border-radius: 14px;
     padding: 10px 20px;
     text-decoration: none;
-    margin-top: 20px;
+   
 }
 .btn:hover {
     color:#f2aa4cff;
     background-color: black;
     transition: .4s ease-in-out;
+}
+.btn-special {
+    margin-top: 20px;
 }
 
