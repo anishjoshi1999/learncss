@@ -1,0 +1,84 @@
+/* Useful article for media query */
+/* https://www.freecodecamp.org/news/learn-css-media-queries-by-building-projects/ */
+
+:root {
+    /* Colors */
+    --color-1: #cdb4db;
+    /* Mobile */
+    --color-2: #fff1e6;
+    /* Tablet */
+    --color-3: #52b788;
+    /* Laptop */
+    --color-4: #bee1e6;
+    /* Desktop */
+
+    /* Break points */
+    --mobile: 576px;
+    /* Mobile */
+    --tablet: 768px;
+    /* Tablet */
+    --laptop: 992px;
+    /* Laptop */
+    --desktop: 1200px;
+    /* Desktop */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 35px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+#size {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    font-size: 35px;
+    transform: translateX(-50%);
+    color: red;
+}
+
+/* , and  */
+/* burger and pizza */
+/* burger, pizza and coca-cola */
+/* Defining Media Queries */
+/* CSS custom property doesnot work in media query to do this you have to use the preprocessor like sass */
+
+/* Do the largest screen first in descending order */
+@media (max-width:1200px) {
+    .container {
+        background-color: #bee1e6;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        background-color: #52b788;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        background-color: #fff1e6;
+    }
+}
+
+@media (max-width:576px) {
+    .container {
+        background-color: #cdb4db;
+    }
+}
