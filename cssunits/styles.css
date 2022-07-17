@@ -1,0 +1,27 @@
+.fifty-percent {
+    width: 50%;
+}
+/* .one-hundred-pixels {
+    width: 100px;
+} */
+.twenty-five-vh {
+height: 25vh;
+}
+.fifty-vw {
+    width: 50vw;
+}
+.parent {
+    border: 2px solid black;
+    width: 135px;
+}
+
+/* Absolute units */
+/* pixels */
+/* Relative units */
+/* % */
+/* vh and vw */
+/* 1 vw is the 1% of the entire screen width */
+/* vw and vh are based on entire screen size while % is based on its parent  */
+
+/* rem and em are relative size units and they are relative to font-size */
+/* we cam also use % on font-size */
