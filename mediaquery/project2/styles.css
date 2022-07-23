@@ -79,6 +79,53 @@ background-repeat: no-repeat;
     margin-right: 10%;
 }
 .footer [class ^="footer__"] img{
-    width: 5.3vw;
+    width: 4vw;
+}
+
+/* Mobile Version */
+@media (max-width:650px){
+    .header {
+        justify-content: center;
+
+    }
+    .header__logo {
+        font-size: 40px;
+    }
+    .header__menu {
+        /* We donot have a menu on mobile version */
+        display: none;
+    }
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main__image {
+        width: 200px;
+        height: 200px;
+        /* when applying border radius on an image make sure you use background-size and background-position */
+        border-radius: 100%;
+        background-size: 100%;
+        background-position:top;
+
+    }
+    .main__text {
+        width: 100%;
+    }
+    .main__text .main__text-1 {
+        display: none;
+    }
+    .main__text-2,.main__text-3,.main__text-4 {
+        font-size: 30px;
+    }
+    .footer {
+        justify-content: center;
+        margin: 0;
+    }
+    .footer [class^="footer__"] img{
+        width: 45px;
+        height: 45px;
+    }
+
 }
 
