@@ -1,0 +1,84 @@
+* {
+    margin: 0 5px;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+#size {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 35px;
+    color: red;
+}
+/* specify our container with a height of 100vh */
+.container {
+    height: 100vh;
+
+}
+/* giving 10% of 100vh to header class */
+.header {
+    height: 10%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+
+}
+.header__logo {
+    font-size:4vw ;
+}
+.header__menu {
+    display: flex;
+    font-size: 2.5vw;
+    /* create a gap between flex items */
+    gap: 15px;
+    align-items: center;
+}
+/* giving 80% of 100vh to main class */
+.main{
+    height: 80%;
+    /* border: 2px solid red; */
+    display: flex;
+}
+.main__image {
+background-image:url('../images/pp.jpg');
+/* for background image we have to set either width or height */
+width: 50%;
+background-position: left center;
+/* background-size:contain is more responsive */
+background-size: contain;
+background-repeat: no-repeat;
+/* border: 2px solid red; */
+}
+.main__text {
+    width: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__text .main__text-1{
+    font-size: 10vw;
+}
+.main__text .main__text-2,.main__text-3,.main__text-4 {
+    font-size: 5vw;
+}
+
+/* giving 10% of 100vh to main class */
+.footer {
+    height: 10%;
+    /* border: 2px solid orange; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin-right: 10%;
+}
+.footer [class ^="footer__"] img{
+    width: 5.3vw;
+}
+
