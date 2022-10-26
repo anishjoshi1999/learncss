@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+header {
+    background-image: url('./images/tesla.jpg');
+    color: white;
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -40px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header ul li a:hover {
+    color: #cc0000;
+    transition: .4s ease-in-out;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+.logo img {
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    width: 150px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul li {
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+.main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 130px;
+}
+
+.main h1 span {
+    /* color: #000000; */
+
+}
+
+.main p {
+    margin-top: 25px;
+    text-align: center;
+    width: 60%;
+}
+
+.btn {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 10px 20px;
+    text-decoration: none;
+
+}
+
+.btn:hover {
+    color: white;
+    border-color: white;
+    background-color: #cc0000;
+    transition: .4s ease-in-out;
+}
+
+.btn-special {
+    margin-top: 20px;
+}
